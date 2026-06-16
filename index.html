@@ -1,1 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingsley Ezekiel Nabla — UI/UX Designer & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">KEN<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#design">Design</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name reveal">
+          Kingsley<br/>
+          <em>Ezekiel</em><br/>
+          Nabla
+        </h1>
+        <p class="hero-role reveal">UI/UX Designer · Web Developer · Product Designer</p>
+        <p class="hero-intro reveal">
+          I craft digital experiences that sit at the intersection of beauty and function — turning ideas into products people love to use.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          <a href="#" class="btn btn-outline" download>Download Resume</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Years experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects delivered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Happy clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-col reveal">
+        <div class="hero-photo-frame">
+          <img src="a.jpeg" alt="Kingsley Ezekiel Nabla" class="hero-photo" />
+          <div class="hero-photo-ring"></div>
+          <!-- floating badges -->
+          <div class="float-badge float-badge-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Figma Expert
+          </div>
+          <div class="float-badge float-badge-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Ghana · West Africa
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-col reveal">
+          <div class="about-photo-wrap">
+            <img src="a.png" alt="Kingsley Ezekiel Nabla" />
+            <div class="about-photo-accent"></div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title">Designing with purpose.<br/>Building with precision.</h2>
+          <p class="about-body">
+            I'm Kingsley Ezekiel Nabla — a UI/UX Designer and Web Developer based in Ghana, passionate about creating digital experiences that are as beautiful as they are functional.
+          </p>
+          <p class="about-body">
+            My work spans the full spectrum of digital product creation: from deep user research and wireframing to pixel-perfect visual design and front-end development. I believe great design is invisible — it gets out of the way and lets people do what they came to do.
+          </p>
+          <p class="about-body">
+            I've designed and built real-world platforms across fintech, education, and community sectors — including the Ghana FinTech Awards platform, the Fanaka Education ecosystem, and several other digital products reaching thousands of users across West Africa.
+          </p>
+          <div class="about-tags">
+            <span>Design Thinking</span>
+            <span>User Research</span>
+            <span>Systems Design</span>
+            <span>Prototyping</span>
+            <span>Front-end Dev</span>
+            <span>Branding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="projects section-pad" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2 class="section-title">Projects I'm proud of</h2>
+        <p class="section-sub">Real platforms, real users, real impact.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder p1">
+              <span>GFA</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://ghanafintechawards.org" target="_blank" class="project-link-btn">Visit Site ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Fintech</span>
+              <span class="project-tag">Web</span>
+            </div>
+            <h3 class="project-title">Ghana FinTech Awards</h3>
+            <p class="project-desc">A digital platform connecting fintech innovators across Ghana — showcasing industry awards, events, and recognition for the region's most impactful companies.</p>
+            <div class="project-role">
+              <span class="role-label">Role</span>
+              <span>UI Designer + Web Developer</span>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>CMS</span>
+            </div>
+            <a href="https://ghanafintechawards.org" target="_blank" class="project-cta">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder p2">
+              <span>TFV</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://topfintechvoices.com" target="_blank" class="project-link-btn">Visit Site ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Fintech</span>
+              <span class="project-tag">Platform</span>
+            </div>
+            <h3 class="project-title">Top FinTech Voices</h3>
+            <p class="project-desc">A platform spotlighting fintech leaders, industry insights, and thought leadership from across Africa and beyond. Designed to elevate the voices driving financial innovation.</p>
+            <div class="project-role">
+              <span class="role-label">Role</span>
+              <span>Product Designer + Developer</span>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>CMS</span>
+            </div>
+            <a href="https://topfintechvoices.com" target="_blank" class="project-cta">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Project 3 — Fanaka (featured, full width) -->
+        <article class="project-card project-card--featured reveal">
+          <div class="project-img">
+            <div class="project-placeholder p3">
+              <span>Fanaka</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://fanaka.edu.gh" target="_blank" class="project-link-btn">Visit Site ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Education</span>
+              <span class="project-tag">Ecosystem</span>
+              <span class="project-tag featured-tag">Featured</span>
+            </div>
+            <h3 class="project-title">Fanaka Education Platform</h3>
+            <p class="project-desc">A full education ecosystem — three interconnected platforms designed to simplify how students access learning, submit applications, and manage their academic journey. Built from zero to launch.</p>
+            <div class="project-role">
+              <span class="role-label">Role</span>
+              <span>UI Designer + Web Developer</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://fanaka.edu.gh" target="_blank">Main Site ↗</a>
+              <a href="https://apply.fanaka.edu.gh" target="_blank">Application Portal ↗</a>
+              <a href="https://portal.fanaka.edu.gh" target="_blank">Student Portal ↗</a>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>CMS</span><span>Responsive</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder p4">
+              <span>DDL</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://portal.ddlforum.com" target="_blank" class="project-link-btn">Visit Site ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Community</span>
+              <span class="project-tag">Portal</span>
+            </div>
+            <h3 class="project-title">DDL Forum Portal</h3>
+            <p class="project-desc">A digital community and information platform — designed to facilitate meaningful conversation, resource sharing, and connection within a focused professional community.</p>
+            <div class="project-role">
+              <span class="role-label">Role</span>
+              <span>UI/UX Designer + Developer</span>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>CMS</span>
+            </div>
+            <a href="https://portal.ddlforum.com" target="_blank" class="project-cta">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GRAPHIC DESIGN ══ -->
+  <section class="design-section section-pad" id="design">
+    <div class="design-inner">
+      <div class="container">
+        <div class="design-content reveal">
+          <p class="eyebrow eyebrow-light">Graphic Design</p>
+          <h2 class="section-title section-title-light">Visual storytelling<br/>beyond the screen</h2>
+          <p class="design-body">
+            Beyond digital products, I create compelling visual identities, brand assets, and graphic design work that communicates with clarity and impact. From brand strategy to print and digital collateral — I speak the full language of visual design.
+          </p>
+          <a href="https://drive.google.com/file/d/1zTBPXx4nW7qjzBD82LjXH1e_3O8y_RIv/view?usp=sharing" target="_blank" class="btn btn-primary btn-lg">
+            View Graphic Design Portfolio
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="design-mosaic reveal">
+          <div class="mosaic-cell mc1"><span>Brand Identity</span></div>
+          <div class="mosaic-cell mc2"><span>Print Design</span></div>
+          <div class="mosaic-cell mc3"><span>Social Media</span></div>
+          <div class="mosaic-cell mc4"><span>Typography</span></div>
+          <div class="mosaic-cell mc5"><span>Illustration</span></div>
+          <div class="mosaic-cell mc6"><span>Motion</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DESIGN PROCESS ══ -->
+  <section class="process section-pad" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">How I Work</p>
+        <h2 class="section-title">My design process</h2>
+        <p class="section-sub">A disciplined workflow that turns ambiguous problems into polished products.</p>
+      </div>
+      <div class="process-track">
+        <div class="process-line"></div>
+        <div class="process-steps">
+
+          <div class="process-step reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-body">Research users, understand the problem space, identify constraints and opportunities.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="step-title">Define</h3>
+            <p class="step-body">Synthesize findings into clear problem statements, user journeys, and solution criteria.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-body">Wireframes, high-fidelity prototypes, visual systems, and interaction design in Figma.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-number">04</div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-body">Develop responsive, accessible, performant products using HTML, CSS, and JavaScript.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-number">05</div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="17 6 23 6 23 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="step-title">Improve</h3>
+            <p class="step-body">Test with real users, gather data, iterate and refine until the product truly works.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section class="skills section-pad" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2 class="section-title">What I bring to the table</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>UI Design</h3>
+          <p>Pixel-perfect interfaces built on strong visual hierarchy and accessible design systems.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>UX Design</h3>
+          <p>User research, journey mapping, and usability testing to create experiences that actually work.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Figma</h3>
+          <p>Components, auto-layout, variants, prototypes, and design tokens — the full toolkit.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>HTML / CSS</h3>
+          <p>Semantic markup, modern CSS, animations, and responsive layouts from scratch.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactive interfaces, DOM manipulation, animations, and modern ES6+ patterns.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first, fluid layouts that work beautifully on every screen size and device.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:93%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Product Design</h3>
+          <p>End-to-end product thinking from concept to launch, with a focus on user outcomes.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Brand identities, visual systems, print, and digital design that communicates with impact.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:87%"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Design Systems</h3>
+          <p>Scalable component libraries, tokens, and documentation that teams actually use.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:83%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's build something<br/>great together.</h2>
+          <p class="contact-body">Whether you have a project in mind, a role you think I'd fit, or just want to say hello — my inbox is open.</p>
+          <div class="contact-details">
+            <a href="mailto:kinnabla@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">kinnabla@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">Kingsley Ezekiel Nabla</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="jane@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Project enquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">KEN<span>.</span></span>
+      <p class="footer-copy">© 2025 Kingsley Ezekiel Nabla. Designed & built with care.</p>
+      <div class="footer-links">
+        <a href="mailto:kinnabla@gmail.com">Email</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://drive.google.com/file/d/1zTBPXx4nW7qjzBD82LjXH1e_3O8y_RIv/view?usp=sharing" target="_blank">Portfolio PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
