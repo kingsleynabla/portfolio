@@ -11,57 +11,66 @@ let followerX = 0, followerY = 0;
 document.addEventListener('mousemove', e => {
   mouseX = e.clientX;
   mouseY = e.clientY;
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top  = mouseY + 'px';
+  if(cursor) {
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top  = mouseY + 'px';
+  }
 });
 
 (function animateFollower() {
   followerX += (mouseX - followerX) * 0.12;
   followerY += (mouseY - followerY) * 0.12;
-  follower.style.left = followerX + 'px';
-  follower.style.top  = followerY + 'px';
+  if(follower) {
+    follower.style.left = followerX + 'px';
+    follower.style.top  = followerY + 'px';
+  }
   requestAnimationFrame(animateFollower);
 })();
 
 // Hover effect on interactive elements
 document.querySelectorAll('a, button, .project-card, .skill-card, .mosaic-cell').forEach(el => {
   el.addEventListener('mouseenter', () => {
-    follower.style.width  = '56px';
-    follower.style.height = '56px';
-    follower.style.borderColor = 'rgba(91,95,239,0.9)';
+    if(follower) {
+      follower.style.width  = '56px';
+      follower.style.height = '56px';
+      follower.style.borderColor = 'rgba(91,95,239,0.9)';
+    }
   });
   el.addEventListener('mouseleave', () => {
-    follower.style.width  = '36px';
-    follower.style.height = '36px';
-    follower.style.borderColor = 'rgba(91,95,239,0.5)';
+    if(follower) {
+      follower.style.width  = '36px';
+      follower.style.height = '36px';
+      follower.style.borderColor = 'rgba(91,95,239,0.5)';
+    }
   });
 });
 
 /* ── NAV SCROLL EFFECT ── */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
+  if(nav) nav.classList.toggle('scrolled', window.scrollY > 40);
 });
 
 /* ── MOBILE NAV TOGGLE ── */
 const navToggle = document.getElementById('navToggle');
 const navMobile = document.getElementById('navMobile');
 
-navToggle.addEventListener('click', () => {
-  navMobile.classList.toggle('open');
-});
+if(navToggle && navMobile) {
+  navToggle.addEventListener('click', () => {
+    navMobile.classList.toggle('open');
+  });
 
-// Close on link click
-navMobile.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navMobile.classList.remove('open'));
-});
+  // Close on link click
+  navMobile.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navMobile.classList.remove('open'));
+  });
+}
 
 /* ── SCROLL REVEAL ── */
 const revealObserver = new IntersectionObserver(
   entries => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        // Stagger sibling reveals
         const siblings = entry.target.parentElement.querySelectorAll('.reveal:not(.visible)');
         siblings.forEach((el, idx) => {
           if (el === entry.target) {
